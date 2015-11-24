@@ -23,7 +23,7 @@ app.use(middleware.logger);
 
 //getting about page & calling the middleware.requireAuthentication
 app.get('/about', middleware.requireAuthentication, function (req, res){
-  res.send('About Us');
+  res.send('About Us!');
 });
 
 //tell express that u want use static html template, where __dirname is the location of web-server app; /public is the public root
